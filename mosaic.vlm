@@ -3,13 +3,13 @@
 ##################################
 
 # Comment the following line if you don't want to reset your VLM configuration
-del all
+# del all
 
 # Background options
 new   bg broadcast enabled
 setup bg input "./black.jpg"
 setup bg option image-duration=-1
-setup bg output #transcode{sfilter=mosaic{width=1280,height=960,cols=2,rows=2,position=1,order="1,2,3,4",keep-aspect-ratio=enabled,mosaic-align=5},vcodec=mp4v,vb=2000,fps=15}:duplicate{dst=display}
+setup bg output #transcode{sfilter=mosaic,vcodec=mp4v,vb=2000,fps=15}:duplicate{dst=display}
 
 # Input options
 new   1 broadcast enabled
