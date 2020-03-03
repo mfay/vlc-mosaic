@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/Applications/VLC.app/Contents/MacOS/VLC --vlm-conf ./mosaic.vlm
+

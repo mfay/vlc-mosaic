@@ -13,25 +13,25 @@ setup bg output #transcode{sfilter=mosaic{width=1280,height=960,cols=2,rows=2,po
 
 # Input options
 new   1 broadcast enabled
-setup 1 input
+setup 1 input rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
 setup 1 option dshow-fps=15
 setup 1 option dshow-size="640x480"
 setup 1 output #duplicate{dst=mosaic-bridge{id=1,width=640,height=480},select=video,dst=bridge-out{id=0}}
 
 new   2 broadcast enabled
-setup 2 input /home/mfay/Videos/Pexels_Videos_1188039.mp4
+setup 2 input rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
 setup 2 option dshow-fps=15
 setup 2 option dshow-size="640x480"
 setup 2 output #duplicate{dst=mosaic-bridge{id=2,width=640,height=480},select=video,dst=bridge-out{id=1}}
 
 new   3 broadcast enabled
-setup 3 input /home/mfay/Videos/Pexels_Videos_1188039.mp4
+setup 3 input rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
 setup 3 option dshow-fps=15
 setup 3 option dshow-size="640x480"
 setup 3 output #duplicate{dst=mosaic-bridge{id=3,width=640,height=480},select=video,dst=bridge-out{id=2}}
 
 new   4 broadcast enabled
-setup 4 input /home/mfay/Videos/Pexels_Videos_1188039.mp4
+setup 4 input rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
 setup 4 option dshow-fps=15
 setup 4 option dshow-size="640x480"
 setup 4 output #duplicate{dst=mosaic-bridge{id=4,width=640,height=480},select=video,dst=bridge-out{id=3}}
